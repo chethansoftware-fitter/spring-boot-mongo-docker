@@ -1,7 +1,7 @@
 version: "3.1"
 services:
    springapp:
-      image: 456123a/springbootapp:${secret}
+      image: 456123a/java-web-app-docker:${secret}
       ports:
       - 8080:8080
       networks:
