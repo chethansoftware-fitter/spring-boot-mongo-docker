@@ -6,10 +6,6 @@ services:
       - 8080:8080
       networks:
       - springappbridge
-      environment:
-      - MONGO_DB_HOSTNAME=mongocontainer
-      - MONGO_DB_USERNAME=devdb
-      - MONGO_DB_PASSWORD=devdb@1234
       restart: always
    mongocontainer:
       image: mongo
@@ -17,9 +13,6 @@ services:
       - mongodb:/data/db
       networks:
       - springappbridge
-      environment:
-      - MONGO_INITDB_ROOT_USERNAME=devdb
-      - MONGO_INITDB_ROOT_PASSWORD=devdb@1234
       restart: always
 volumes:
   mongodb:
