@@ -23,7 +23,7 @@ spec:
         app: springboot
     spec:
       containers:
-      - image: 456123a/springbootapp:${secret}
+      - image: 456123a/springbootapp
         name: springboot
         ports:
         - containerPort: 8080  
